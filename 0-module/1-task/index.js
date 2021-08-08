@@ -1,3 +1,3 @@
-function sum(m, n) {
-  // ваш код...
+ export default function sum(m, n) {
+  return m + n;
 }
