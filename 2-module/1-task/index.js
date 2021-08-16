@@ -1,9 +1,11 @@
-
 function sumSalary(salaries) {
-  if("John" in salaries && "Pete" in salaries && "Ann" in salaries ) {
-    return salaries.John + salaries.Pete + salaries.Ann;
+  let sumZp = 0;
+  for (let key in salaries) {
+    if(typeof salaries[key] == "number" && Number.isNaN(salaries[key]) == false && Number.isInteger(salaries[key]) == true ){
+      sumZp = sumZp + salaries[key];
+    }
+    
   }
-  else {
-    return 0;
-  }
+  return sumZp;  
 }
+
