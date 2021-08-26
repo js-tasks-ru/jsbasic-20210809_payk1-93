@@ -30,18 +30,8 @@ function getMinMax(str) {
 }
 
 
-/* задача Фильтрация по диапазону
-let arr = [5, 3, 8, 1];
-a = 1;
-b = 4;
-let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-      if (arr[i] >= a && arr[i] <= b){
-        console.log( arr[i] );
-        newArr.push(arr[i])
-      }   
-    }
-console.log(newArr)
+/* задача Фильтрация по диапазону и Функция showSalary(users, age)
+
 
 /* задача Функция showSalary(users, age)
 let user1 = {
