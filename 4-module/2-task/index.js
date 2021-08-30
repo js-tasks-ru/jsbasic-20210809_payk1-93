@@ -1,6 +1,6 @@
 function makeDiagonalRed(table) {
   const tegtable = table;
-  const tegtbody = table.firstElementChild;
+  const tegtbody = table.querySelector("tbody");
   
   let lenghtTable = tegtable.rows.length;
   let lenghtTbody = tegtbody.rows.length;
