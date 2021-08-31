@@ -1,3 +1,5 @@
 function toggleText() {
-  // ваш код...
+  
+  const tegDiv = document.querySelector("div");
+  tegDiv.toggleAttribute("hidden");
 }

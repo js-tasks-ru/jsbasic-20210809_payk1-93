@@ -1,9 +1,8 @@
 function highlight(table) {
-  const table = document.querySelector("tbody");
-  const tegtable = table.querySelectorAll("td");
-  const tagtd = document.querySelector("td");
-  const tegtableTr = table.querySelectorAll("tr");
-  console.log(tegtableTr)
+  const table1 = table.querySelector("tbody");
+  const tegtable = table1.querySelectorAll("td");
+  const tagtd = table.querySelector("td");
+  const tegtableTr = table1.querySelectorAll("tr");
 
   for(i = 0; i < tegtable.length; i++){
     if(tegtable[i].dataset.available =="false"){

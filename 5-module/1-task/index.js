@@ -1,3 +1,5 @@
 function hideSelf() {
-  // ваш код...
+ const tegButton = document.querySelector("button");
+  tegButton.setAttribute("hidden", "true");
+  
 }
