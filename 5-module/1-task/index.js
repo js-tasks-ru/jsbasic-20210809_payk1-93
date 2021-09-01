@@ -1,5 +1,12 @@
 function hideSelf() {
  const tegButton = document.querySelector("button");
-  tegButton.setAttribute("hidden", "true");
-  
+
+ function rightClick() {
+  tegButton.setAttribute("hidden","");
+  }
+
+tegButton.addEventListener("click",rightClick );
+
 }
+
+
