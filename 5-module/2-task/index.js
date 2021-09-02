@@ -1,3 +1,10 @@
 function toggleText() {
-  // ваш код...
+  
+  const tegDiv = document.querySelector("div");
+  const tegBut = document.querySelector("button");
+  
+function rightClick() {
+  tegDiv.toggleAttribute("hidden");
+}
+tegBut.addEventListener("click",rightClick );
 }
