@@ -16,8 +16,8 @@
 export default class UserTable { 
   constructor(rows) { 
     this.rows = rows;
+    this.render();
   }
-  
   render(){
     const tableDOM = document.createElement("TABLE");    
     let theadTable = `<thead><tr>
@@ -37,10 +37,8 @@ export default class UserTable {
           <td><button>X</button></td>
           </tr>`;
       }).join("");
-  
-    
     tableDOM.addEventListener(`click`, this.onClick);
-    
+    this.elem = tableDOM
     return  tableDOM;
     }
     onClick(event){
@@ -48,7 +46,7 @@ export default class UserTable {
         event.target.parentElement.parentElement.remove();
       }
     }
-
+}
     /**   const theadDom = `<thead><tr>
     <th>Имя</th>
     <th>Возраст</th>
@@ -67,7 +65,7 @@ export default class UserTable {
       </tr></tbody>`;
       return tableDOM.innerHTML = theadDom + tbodyDom;
  */   
-  }
+  
 
 
 
